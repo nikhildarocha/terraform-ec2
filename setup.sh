@@ -1,3 +1,3 @@
 #!/bin/zsh
-export AWS_ACCESS_KEY_ID="AKIAYVH4DHISVGHHIFIF"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="changeme"
+export AWS_SECRET_ACCESS_KEY="changeme"
