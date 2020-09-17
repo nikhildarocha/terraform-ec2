@@ -1,5 +1,8 @@
 provider "aws" {
     region = var.aws_region
+    shared_credentials_file = var.aws_secret_file
+    profile = var.aws_secret_profile
+
 }
 
 resource "aws_instance" "es cluster" {

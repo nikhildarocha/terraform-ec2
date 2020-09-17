@@ -3,6 +3,16 @@ variable "aws_region" {
     default = "us-east-1"
 
 }
+variable "aws_secret_file" {
+    description = "AWS Secrets to authenticate"
+    default = "/home/k/.aws/credentials"
+
+}
+
+variable "aws_secret_profile" {
+    description = "AWS Secrets profile"
+    default = "terraform"
+}
 
 variable "instance_count" {
     description = "Number of ec2 instances to launch"
