@@ -5,7 +5,7 @@ provider "aws" {
 
 }
 
-resource "aws_instance" "es cluster" {
+resource "aws_instance" "es_cluster" {
     ami =  lookup(var.ami,var.aws_region)
     instance_type = var.instance_type
     count = var.instance_count

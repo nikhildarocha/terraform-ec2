@@ -5,7 +5,7 @@ variable "aws_region" {
 }
 variable "aws_secret_file" {
     description = "AWS Secrets to authenticate"
-    default = "/home/k/.aws/credentials"
+    default = "/Users/ndarocha/.aws/credentials"
 
 }
 
@@ -26,7 +26,7 @@ variable "instance_type" {
 
 variable "ami" {
     description = "Image for the ec2 instance"
-    type = "map"
+    type = map(string)
     default = {
         us-east-1 =  "ami-05e00da24aba682c3"
     }
@@ -34,6 +34,6 @@ variable "ami" {
 
 variable "instance_tags" {
     description = "Tags for ec2 instance"
-    type = "list"
+    type = list(string)
     default = ["es-1", "es-2"]
 }
