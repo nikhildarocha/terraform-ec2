@@ -16,7 +16,7 @@ variable "aws_secret_profile" {
 
 variable "instance_count" {
   description = "Number of ec2 instances to launch"
-  default     = "2"
+  default     = "3"
 }
 
 variable "instance_type" {
